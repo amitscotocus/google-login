@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -92,18 +92,18 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                    <div class="btn-wrapper text-center">
+                </div>
+            </div>
+            <div class="btn-wrapper text-center">
                 <a href="{{ url('auth/facebook')}}" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"></span>
+                  <span class="btn-inner--icon"><img src="{{asset('img/icons/facebook.svg')}}"></span>
                   <span class="btn-inner--text">Facebook</span>
                 </a>
                 <a href="{{ url('auth/google')}}" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"></span>
+                  <span class="btn-inner--icon"><img src="{{asset('img/icons/google.svg')}}"></span>
                   <span class="btn-inner--text">Google</span>
                 </a>
               </div>
-                </div>
-            </div>
         </div>
     </body>
 </html>
